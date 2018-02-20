@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.firesoul.app1.MainActivity">
+
+    <!--Seleccione una figura -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greenyellow"
+        android:gravity="center_horizontal"
+        android:text="@string/Seleccione"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic|bold" />
+
+    <!--raddiobutton -->
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white">
+
+
+        <!--se usa margin top y se colocan las opciones -->
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/circulo"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/triangulo"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/cuadro"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/cubo"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+    </RadioGroup>
+
+    <!--Agregue Valores -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/greenyellow"
+        android:gravity="center_horizontal"
+        android:text="@string/agregar"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic|bold" />
+
+    <!--dato 1 -->
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/a"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black" />
+
+    <!--dato 2 -->
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:hint="@string/b"
+        android:inputType="numberDecimal"
+
+        android:textColor="@color/black" />
+
+    <!--dato 3 -->
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:hint="@string/c"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black" />
+
+    <!--Agregue Valores -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/greenyellow"
+        android:gravity="center_horizontal"
+        android:text="@string/Resultado"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:text="@string/d"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:text="@string/e"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:text="@string/f"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic|bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@color/greenyellow"
+        android:text="@string/cal"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="onButtonClicked"/>
+
+
+</LinearLayout>
+

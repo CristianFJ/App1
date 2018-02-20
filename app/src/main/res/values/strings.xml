@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="Seleccione">Seleccione una figura:</string>
+    <string name="circulo">Circulo</string>
+    <string name="triangulo">Triangulo</string>
+    <string name="cubo">Cubo</string>
+    <string name="cuadro">Cuadro</string>
+    <string name="agregar">Agregue los valores requeridos:</string>
+    <string name="a">Dato 1</string>
+    <string name="b">Dato 2</string>
+    <string name="c">Dato 3</string>
+    <string name="Resultado">Resultados</string>
+    <string name="d">Perimetro</string>
+    <string name="e">Area</string>
+    <string name="f">Volumen</string>
+    <string name="cal">Calcular</string>
+</resources>
